@@ -49,7 +49,6 @@ void compute_hash(const void *data, size_t len, ObjectID *id_out) {
 }
 
 // Get the filesystem path where an object should be stored.
-// Format: .pes/objects/XX/YYYYYYYY...
 // The first 2 hex chars form the shard directory; the rest is the filename.
 void object_path(const ObjectID *id, char *path_out, size_t path_size) {
     char hex[HASH_HEX_SIZE + 1];
