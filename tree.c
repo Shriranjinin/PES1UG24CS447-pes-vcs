@@ -15,7 +15,6 @@
 #include <sys/stat.h>
 
 // ─── Mode Constants ─────────────────────────────────────────────────────────
-
 #define MODE_FILE      0100644
 #define MODE_EXEC      0100755
 #define MODE_DIR       0040000
