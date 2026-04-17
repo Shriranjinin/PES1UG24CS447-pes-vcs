@@ -164,7 +164,7 @@ int tree_from_index(ObjectID *out_id) {
         fclose(f);
     }
 
-    // 🔥 IMPORTANT: ensure at least one byte (so object is created)
+    //  IMPORTANT: ensure at least one byte (so object is created)
     if (offset == 0) {
         buffer[0] = '\0';
         offset = 1;
